@@ -1,0 +1,11 @@
+type: object
+  required:
+  - status_code
+  - message
+  properties:
+    'status_code':
+      type: integer
+      enum: [503]
+    'message': 
+      type: string
+      enum: ['The server is currently unable to handle the request.']          
