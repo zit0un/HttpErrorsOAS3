@@ -1,0 +1,11 @@
+type: object
+  required:
+  - status_code
+  - message
+  properties:
+    'status_code':
+      type: integer
+      enum: [406]
+    'message': 
+      type: string
+      enum: ['Headers sent in the request are not compatible with the service.']
